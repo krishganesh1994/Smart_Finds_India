@@ -1,114 +1,102 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Smart Finds India</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-      <style>
-.logo{width:120px;height:120px;object-fit:contain;border-radius:50%;margin-bottom:10px}
+<head>
+<title>Smart Finds India</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.logo{width:120px;height:120px;object-fit:contain;border-radius:50%}
 body{font-family:Arial;margin:0;background:#f5f5f5}
 header{background:#111;color:white;padding:20px;text-align:center}
 .container{padding:20px}
-.search{width:100%;padding:12px;margin-bottom:20px}
+.menu{background:white;padding:12px;text-align:center}
+.menu a{margin:8px;text-decoration:none;color:#111;font-weight:bold}
 .products{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:20px}
 .card{background:white;padding:15px;border-radius:10px;box-shadow:0 2px 8px #ccc}
 .card img{width:100%;height:320px;object-fit:contain}
-button{background:#ff9900;border:none;padding:12px;width:100%;cursor:pointer}
-footer{padding:20px;text-align:center}
-.menu{
-background:white;
-padding:12px;
-text-align:center;
-}
-.menu a{
-margin:8px;
-text-decoration:none;
-color:#111;
-font-weight:bold;
-}
+button{background:#ff9900;border:none;padding:12px;width:100%;cursor:pointer;border-radius:20px}
+button:hover{background:#e68a00;transform:scale(1.02)}
 @media(max-width:600px){
-.menu a{
-font-size:button:hover{
-background:#e68a00;
-transform:scale(1.02);
+.products{grid-template-columns:repeat(2,1fr);gap:10px}
+.card img{height:150px}
+.menu a{font-size:13px}
 }
-
-button{
-border-radius:20px;
-}  
 </style>
-    </head>
-    <body>
-      <header>
-        <img class="logo" src="7580d5f7-744b-4d70-8e78-1e976bc07aee.jpeg" alt="Smart Finds Logo">
-        <h1>Smart Finds India</h1>
-        <p>Useful gadgets & everyday finds</p>
-      </header>
-      <nav class="menu">
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="privacy.html">Privacy</a>
-      <a href="contact.html">Contact</a>
-      </nav>
-      <div class="container">
-        <input class="search" placeholder="Search gadgets..." onkeyup="searchProduct(this.value)">
-          <div class="products">
-            <div class="card">
-              <img src="Writing_pad.JPG">
-                <h3>Portronics Writing Pad</h3>
-                <p>Portronics Ruffpad 8.5E Re-Writable LCD Writing Pad with Screen 21.5cm (8.5-inch) for Drawing, Playing, Handwriting Gifts for Kids & Adults  </p>
-                <h3>₹179</h3>
-                <a href="https://amzn.in/d/0a5AaFbE">
-                  <button>Buy on Amazon</button>
-                </a>
-              </div>
-              <div class="card">
-                <img src="e2939efb-8e9b-48c6-bcc3-a56cf1210072.jpeg">
-                  <h3>Buddha Idol</h3>
-                  <p>Meditating Sitting Buddha Idol Statue</p>
-                  <h3>₹371</h3>
-                  <a href="https://amzn.in/d/02zWaS8i">
-                    <button>Buy on Amazon</button>
-                  </a>
-                </div>
-                <div class="card">
-                <img src="IMG_5118.png">
-                  <h3>Rechargable batteries</h3>
-                  <p>Portronics AAA Lithius Type C Rechargeable Batteries</p>
-                  <h3>₹437</h3>
-                  <a href="https://amzn.in/d/0gQvapS5">
-                    <button>Buy on Amazon</button>
-                  </a>
-                </div>
-                 <div class="card">
-                <img src="IMG_5122.png">
-                  <h3>Digital Kitchen Scale</h3>
-                  <p>Digital Kitchen Weighing Scale 10 kg,Electronic Weight Machine with LCD Display for Baking, Cooking, Food & Diet. 6Months Warranty</p>
-                  <h3>₹249</h3>
-                  <a href="https://amzn.in/d/009UKCxH">
-                    <button>Buy on Amazon</button>
-                  </a>
-                </div>
-                <div class="card">
-                <img src="IMG_5130.png">
-                  <h3> Stylish Laptop Bag</h3>
-                  <p> Stylish Laptop Bag for Women | Trendy Office & Travel Tote Bag ✨</p>
-                  <h3>₹249</h3>
-                  <a href="https://amzn.in/d/09MFkxhZ">
-                    <button>Buy on Amazon</button>
-                  </a>
-                 </div>
-              </div>
-            </div>
-            <footer>
-              <p>Affiliate Disclosure: As an Amazon Associate, we earn from qualifying purchases.</p>
-            </footer>
-            <script>
+</head>
+
+<body>
+
+<header>
+<img class="logo" src="7580d5f7-744b-4d70-8e78-1e976bc07aee.jpeg">
+<h1>Smart Finds India</h1>
+<p>Useful gadgets & everyday finds</p>
+</header>
+
+<nav class="menu">
+<a href="index.html">Home</a>
+<a href="about.html">About</a>
+<a href="privacy.html">Privacy</a>
+<a href="contact.html">Contact</a>
+</nav>
+
+<div class="container">
+<input class="search" placeholder="Search gadgets..." onkeyup="searchProduct(this.value)">
+
+<div class="products">
+
+<div class="card">
+<img src="Writing_pad.JPG">
+<h3>Portronics Writing Pad</h3>
+<p>Digital writing pad</p>
+<h3>₹179</h3>
+<a href="https://amzn.in/d/0a5AaFbE"><button>Buy on Amazon</button></a>
+</div>
+
+<div class="card">
+<img src="e2939efb-8e9b-48c6-bcc3-a56cf1210072.jpeg">
+<h3>Buddha Idol</h3>
+<p>Meditating Sitting Buddha Idol Statue</p>
+<h3>₹371</h3>
+<a href="https://amzn.in/d/02zWaS8i"><button>Buy on Amazon</button></a>
+</div>
+
+<div class="card">
+<img src="IMG_5118.png">
+<h3>Rechargeable Batteries</h3>
+<p>Portronics AAA Type C Rechargeable Batteries</p>
+<h3>₹437</h3>
+<a href="https://amzn.in/d/0gQvapS5"><button>Buy on Amazon</button></a>
+</div>
+
+<div class="card">
+<img src="IMG_5122.png">
+<h3>Digital Kitchen Scale</h3>
+<p>Kitchen weighing scale with LCD display</p>
+<h3>₹249</h3>
+<a href="https://amzn.in/d/009UKCxH"><button>Buy on Amazon</button></a>
+</div>
+
+<div class="card">
+<img src="IMG_5130.png">
+<h3>Stylish Laptop Bag</h3>
+<p>Office & travel tote bag</p>
+<h3>₹249</h3>
+<a href="https://amzn.in/d/09MFkxhZ"><button>Buy on Amazon</button></a>
+</div>
+
+</div>
+</div>
+
+<footer>
+<p>Affiliate Disclosure: As an Amazon Associate, we earn from qualifying purchases.</p>
+</footer>
+
+<script>
 function searchProduct(text){
-let cards=document.querySelectorAll(".card");
-cards.forEach(card=>{
-card.style.display = card.innerText.toLowerCase().includes(text.toLowerCase()) ? "block" : "none";
+document.querySelectorAll(".card").forEach(card=>{
+card.style.display=card.innerText.toLowerCase().includes(text.toLowerCase())?"block":"none";
 });
 }
 </script>
-          </body>
-        </html>
+
+</body>
+</html>
